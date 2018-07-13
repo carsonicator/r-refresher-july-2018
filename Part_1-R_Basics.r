@@ -1,5 +1,6 @@
-# Part 1: Basic R Review
-
+##############################
+### Part 1: Basic R Review ###
+##############################
 # R is a high-level, interpreted programming language and environment for
 # (primarily) statistical analysis. Read more about it here:
 # https://www.r-project.org/about.html
@@ -76,6 +77,13 @@ paste("integer_value", integer_value, "is of type", typeof(integer_value))
   
 ### Data Structures in R 
 
+## From 'Advanced R' by Hadley Wickham
+##
+##      Homogeneous	    Heterogeneous
+##  1d	Atomic vector	  List
+##  2d	Matrix	        Data frame
+##  nd	Array
+  
 ## Atomic Vectors ##
 
 # In R, a vector is a one-dimensional array.
