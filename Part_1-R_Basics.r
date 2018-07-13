@@ -5,6 +5,16 @@
 # (primarily) statistical analysis. Read more about it here:
 # https://www.r-project.org/about.html
 
+# Where am I?
+getwd()
+
+# Change my working directory to './Data_Files'
+setwd(".")
+
+# List the contents of the directory
+dir()
+
+
 ### Arithmetic Operations
 
 # Addition
@@ -157,6 +167,10 @@ integer_vector[-2]
 double_vector
 double_vector[double_vector < 77]
 
+#######################
+# Complete Exercise 1 #
+#######################
+
 # They can also be selected by name if the vector has name attributes. Examples of this
 # are shown below
 
@@ -263,7 +277,6 @@ some_list[["vec"]][2]
 some_list$another_component <- c("a", "b", "c")
 some_list
 
-
 ## Matrices
 
 # A matrix is a 2-dimensional vector (i.e., it has rows and columns) that contains
@@ -328,6 +341,9 @@ mean(shapes)
 # Subtract 2 from all elements
 shapes - 2
 
+#######################
+# Complete Exercise 2 #
+#######################
 
 ## Data Frames
 
@@ -393,6 +409,9 @@ print(second_size)
 
 paste("Is the first size larger than the second size?", first_size > second_size)
 
+#######################
+# Complete Exercise 3 #
+#######################
 
 ### Special Values in R ###
 

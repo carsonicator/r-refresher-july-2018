@@ -16,7 +16,8 @@
     * [R for Data Science (free online version)](http://r4ds.had.co.nz/)
     * [R Cookbook](https://www.amazon.com/Cookbook-Analysis-Statistics-Graphics-Cookbooks/dp/0596809158)
 5. **Cheatsheets**
-    * [Tidyverse for Beginners](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Tidyverse+Cheat+Sheet.pdf)
+    * [Base R](https://www.rstudio.com/wp-content/uploads/2016/05/base-r.pdf)
+    * [Tidyverse for Beginners](https://datacamp-community.s3.amazonaws.com/e63a8f6b-2aa3-4006-89e0-badc294b179c)
     * [Data Wrangling](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
     * [Several Cheatsheets (from R Studio)](https://www.rstudio.com/resources/cheatsheets/)
 6. **Other R Support**

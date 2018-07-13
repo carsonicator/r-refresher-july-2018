@@ -96,5 +96,5 @@ head(guitars_df, n = 2)
 tail(guitars_df, n = 2)
 
 #######################
-# Complete Exercise 5 #
+# Complete Exercise 4 #
 #######################

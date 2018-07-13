@@ -92,7 +92,7 @@ hist(iris$Sepal.Length, breaks = 25, xlim = c(4, 8))
 
 
 #######################
-# Complete Exercise 6 #
+# Complete Exercise 5 #
 #######################
 
 
