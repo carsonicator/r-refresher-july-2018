@@ -164,7 +164,7 @@ typeof(v)
 12 %in% integer_vector                                     # TRUE
 match(c("one", "twelve", "seventy six"), character_vector) # NA 1 2
 which(logical_vector == TRUE)                              # 1 2
-length(numeric_vector)                                     # 3
+length(double_vector)                                     # 3
 
 # Indexing Vectors #
 
