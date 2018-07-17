@@ -12,7 +12,7 @@
 # Getting today's workshop materials #
 ######################################
 
-# 1) Download the materials from here: 
+# 1) Download the materials from here:
 #    https://github.com/kaars/R_Refresher_July_2018.git
 #
 # 2) Instructions on how to do this:
@@ -49,6 +49,8 @@ dir()
 
 # Exponentiation
 2 ^ 100
+# To change the number of significant figures...
+signif(2 ^ 100, digits = 3)
 
 # Modulo (returns the remainder)
 21 %% 5
@@ -96,14 +98,14 @@ paste("numeric_value", numeric_value, "is of type", typeof(numeric_value))
 # Complex
 complex_value = 1 + 2i
 paste("complex_value", complex_value, "is of type", typeof(complex_value))
-  
+
 # Character
 # By putting quotes around the value, we are telling R that this is text.
 character_value <- "234"
 paste("character_value", character_value, "is of type", typeof(character_value))
 
 
-### Data Structures in R 
+### Data Structures in R
 
 ## From 'Advanced R' by Hadley Wickham
 ##
@@ -111,7 +113,7 @@ paste("character_value", character_value, "is of type", typeof(character_value))
 ##  1d	Atomic vector	  List
 ##  2d	Matrix	        Data frame
 ##  nd	Array
-  
+
 ## Atomic Vectors ##
 
 # In R, a vector is a one-dimensional array.
@@ -122,7 +124,7 @@ paste("character_value", character_value, "is of type", typeof(character_value))
 # Atomic vectors and lists (see below) are both a type of vector. They share the
 # following properties:
 
-# What type is it?  
+# What type is it?
 # typeof()
 
 # How many elements are in it?
@@ -164,7 +166,7 @@ typeof(v)
 12 %in% integer_vector                                     # TRUE
 match(c("one", "twelve", "seventy six"), character_vector) # NA 1 2
 which(logical_vector == TRUE)                              # 1 2
-length(double_vector)                                     # 3
+length(double_vector)                                      # 3
 
 # Indexing Vectors #
 
@@ -210,7 +212,7 @@ num_guitars
 # Notice that attributes() will now return the names
 attributes(num_guitars)
 
-# How many guitars does Emilia have? We can now access vector elements by name or 
+# How many guitars does Emilia have? We can now access vector elements by name or
 # position number.
 num_guitars["Emilia"]
 num_guitars[4]
@@ -295,7 +297,7 @@ some_list
 ## Matrices
 
 # A matrix is a 2-dimensional vector (i.e., it has rows and columns) that contains
-# elements of the same type. In R, these can be numeric, character, or logical values.
+# elements of the same type. These can be numeric, character, or logical values.
 
 # A matrix with 4 rows with the number 1 - 12 by row
 matrix(1:12, byrow=TRUE, nrow=4)
@@ -348,7 +350,7 @@ circles
 green_sq_rec <- shapes[2:3,2]
 green_sq_rec
 
-# Average number of green shapes
+# Average number of shapes
 mean(shapes)
 
 # Subtract 2 from all elements
@@ -396,6 +398,7 @@ guitars_df[professional,]
 # light_switch, a non-ordered categorical variable of type 'character'
 light_switch <- c("on", "off", "on", "off", "on", "off")
 light_switch
+table(light_switch) # Build a table of counts of factor levels
 
 # Change 'light_switch' to a factor. Notice that the "Levels" are printed after the contents.
 factor_ls <- factor(light_switch)
@@ -419,10 +422,6 @@ second_size
 
 # Is the first size larger than the second size?
 paste("Is the first size larger than the second size?", first_size > second_size)
-
-#######################
-# Complete Exercise 3 #
-#######################
 
 ## Dates
 
@@ -448,13 +447,13 @@ dates
 
   # In R, missing data in represented as NA
   v <- c(1, 2, 3, NA, 5, 6, NA, NA)
-  
+
   # The is.na() function will return TRUE or FALSE for each element
   is.na(v)
-  
+
   # Which elements are NA?
   which(is.na(v))
-  
+
   # How many NA's are there?
   sum(is.na(v))
 
@@ -463,7 +462,7 @@ dates
   # If a function computes a number that is too large, R will return 'Inf' or '-Inf'
   3 ^ 1000
   -2 ^ 5000
-  
+
   # It's the same if you divide by 0
   1 / 0
 
@@ -476,3 +475,7 @@ dates
 ## NULL
   # Null is used to represent an undefined value
   # It is NOT the same as NA, Inf, -Inf, or NaN
+  
+#######################
+# Complete Exercise 3 #
+#######################

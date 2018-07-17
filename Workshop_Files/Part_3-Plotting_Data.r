@@ -4,8 +4,8 @@
 ##
 #
 
-# We are going to work with one of R's built-in data sets called 'iris'. First, let's
-# find out more about the data:
+# We are going to work with one of R's built-in data sets called 'iris'.
+# First, let's find out more about the data:
 
 #######################
 # Complete Exercise 4 #

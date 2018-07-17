@@ -44,7 +44,7 @@ guitars_df <- data.frame(owner, count, value, professional)
 
 View(guitars_df)
 
-# You can also do this by double clicking on the object name in the 'Environment' pane.
+# You can also do this by clicking on the object name in the 'Environment' pane.
 # You can sort each column by clicking on the column name.
 
 # When working with a new data set, it's a good idea to take a few minutes to examine
@@ -77,7 +77,7 @@ summary(guitars_df)
 
 # Suppose I only want to get a summary of the values of all the guitars in the dataset.
 # How would I do that?
-summary(___)
+summary(guitars_df$value)
 
 # Another handy set of functions is head() and tail(). They return the first and last 'n'
 # rows of a data frame, respectively:

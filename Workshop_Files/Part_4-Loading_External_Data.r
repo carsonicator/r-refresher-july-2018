@@ -22,6 +22,8 @@ iris_df <-read.csv("https://vincentarelbundock.github.io/Rdatasets/csv/datasets/
 
 str(iris_df)
 
+iris_df$Species <- as.factor(iris_df$Species)
+
 ### Importing data from other software ###
 
 # With R, you can import, process, and analyze data from other statistical software including SAS,
@@ -32,7 +34,7 @@ str(iris_df)
 # Let's install and load the 'readxl' package
 
 # Install the library if necessary
-# installed.packages("readxl")
+# install.packages("readxl")
 
 # Load the library
 library(readxl)
