@@ -28,5 +28,5 @@ Please see the instructions [here](https://sites.northwestern.edu/summerworkshop
 
 ## Authors
 
-**Matt Carson** - [Kaars](https://github.com/kaars)
+**Matt Carson** - [carsonicator](https://github.com/carsonicator)
 
